@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8088
+#      全局配置文件名的前面部分
+      name: cloud-config
+#     可以读取多个配置文件
+      profile: client,common
+      failFast: true
+  application:
+    name: config-client-01
+

@@ -1,0 +1,21 @@
+server:
+  port: 8088
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        health:
+          enabled:  false
+        native:
+          searchLocations: D:/configserver
+#        git:
+#          uri: file://D:/ideaprojects/epic/epic-robin/cloud-config-repo
+#          uri: https://git.oschina.net/bingyulei007/cloud-config-repo.git
+#          username: bingyulei008@gmail.com
+#          password: ******
+          searchPaths: /
+  application:
+    name: config-server
+
